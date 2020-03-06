@@ -4,7 +4,7 @@
 #
 Name     : google-auth-httplib2
 Version  : 0.0.3
-Release  : 8
+Release  : 9
 URL      : https://files.pythonhosted.org/packages/e7/32/ac7f30b742276b4911a1439c5291abab1b797ccfd30bc923c5ad67892b13/google-auth-httplib2-0.0.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/e7/32/ac7f30b742276b4911a1439c5291abab1b797ccfd30bc923c5ad67892b13/google-auth-httplib2-0.0.3.tar.gz
 Summary  : Google Authentication Library: httplib2 transport
@@ -20,11 +20,9 @@ BuildRequires : google-auth
 BuildRequires : httplib2
 
 %description
+``httplib2`` Transport for Google Auth
 ======================================
-        
-        |pypi|
-        
-        This library provides an `httplib2`_ transport for `google-auth`_.
+|pypi|
 
 %package license
 Summary: license components for the google-auth-httplib2 package.
@@ -64,7 +62,8 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583535560
+export SOURCE_DATE_EPOCH=1583538774
+# -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
